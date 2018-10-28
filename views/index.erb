@@ -1,0 +1,12 @@
+
+<h1>These are our restaurants</h1>
+<!-- iterate over all my restaurants -->
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>"><%= restaurant.name %></a>
+      </li>
+  <% end %>
+</ul>
+
+<a href="/restaurants/new">Add a new restaurant</a>
